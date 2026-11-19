@@ -27,13 +27,13 @@ Then open `http://localhost:8000`.
 
 ## GitHub Pages
 
-Recommended repository name: `budiwahyu2203-pixel.github.io`.
+Repository: `https://github.com/budiwahyu2203-pixel/PORTFOLIO`.
 
-After the repository exists, push these files to the `main` branch, then enable GitHub Pages from `Settings` > `Pages` > `Deploy from a branch` > `main` > `/ (root)`.
+Publishing source: `gh-pages` branch, root folder. GitHub Pages publishes a project site automatically when a `gh-pages` branch exists.
 
-Expected public URL after publishing: `https://budiwahyu2203-pixel.github.io/`.
+Expected public URL: `https://budiwahyu2203-pixel.github.io/PORTFOLIO/`.
 
-For a project-site URL instead, use any repository name and the public URL becomes `https://budiwahyu2203-pixel.github.io/REPOSITORY/`.
+The `main` branch keeps the same files as a readable source branch. Both branches use relative asset paths, so the site works from a subdirectory.
 
 ## Fiverr profile
 
