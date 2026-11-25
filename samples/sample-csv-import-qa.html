@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><title>DAFTAR KASUS UJI IMPOR CSV</title><style>
+@page { size: A4; margin: 18mm 17mm; }
+body { font-family: "DejaVu Sans", sans-serif; font-size: 10pt; color: #122A45; line-height: 1.45; }
+h1, h2, h3, p, td, th { font-family: "DejaVu Sans", sans-serif; }
+h1 { font-size: 31pt; line-height: 1.15; margin-top: 18mm; margin-bottom: 6mm; }
+h2 { font-size: 17pt; margin-top: 8mm; margin-bottom: 5mm; }
+h3 { font-size: 11pt; color: #122A45; margin-top: 7mm; }
+p { margin-top: 3mm; margin-bottom: 4mm; }
+.eyebrow { font-size: 9pt; letter-spacing: 2pt; color: #167760; font-weight: bold; border-top: 5pt solid #37C9A3; padding-top: 5mm; }
+.subtitle { font-size: 17pt; color: #526579; margin-bottom: 14mm; }
+.notice { background: #F2F5F9; border-left: 4pt solid #E8734A; padding: 5mm; font-size: 9pt; }
+.notice-title { font-size: 10pt; font-weight: bold; }
+.meta { font-size: 9pt; margin-top: 10mm; }
+.footer { font-size: 8pt; color: #526579; border-top: 1pt solid #dbe2ea; margin-top: 8mm; padding-top: 3mm; }
+.page { page-break-before: always; }
+pre { background: #F2F5F9; padding: 5mm; font-family: "DejaVu Sans", monospace; font-size: 10pt; line-height: 1.5; border-left: 3pt solid #37C9A3; }
+table { border-collapse: collapse; width: 100%; font-size: 8pt; margin-top: 4mm; }
+th { background: #122A45; color: #ffffff; text-align: left; font-size: 8pt; }
+td { vertical-align: top; border-bottom: 1pt solid #dbe2ea; background: #F2F5F9; }
+tr { page-break-inside: avoid; }
+.qa table { font-size: 7.5pt; }
+.qa th { font-size: 7.5pt; }
+li { margin-bottom: 3mm; }
+</style></head><body>
+<p class="eyebrow">DOKUMEN CONTOH REKAAN</p><h1>DAFTAR KASUS UJI IMPOR CSV</h1><p class="subtitle">Dokumentasi QA untuk alur unggah data</p><div class="notice"><p class="notice-title">---------- DOKUMEN CONTOH REKAAN ----------</p><p class="">Dibuat untuk ilustrasi saja. Bukan proyek klien nyata, bukan testimoni, dan bukan klaim hasil profit. Seluruh ID, skenario, dan nilai di bawah ini bersifat rekaan serta tidak merujuk pada sistem atau pihak tertentu.</p></div><div class="meta"><p class="">Layanan terkait : Proofreading dan QA dokumen, dengan change log dan proses AI-assisted, human-reviewed.</p><p class="">Jenis berkas    : Contoh PDF (3 halaman — Sampul / Daftar Kasus / Ringkasan &amp; Change Log)</p></div><p class="footer">SAMPLE</p>
+<p style="page-break-before: always;"></p><div class="qa"><p class="eyebrow">DOKUMEN CONTOH REKAAN</p><table cellspacing="0" cellpadding="9"><thead><tr><th bgcolor="#122A45" width="10%">ID</th><th bgcolor="#122A45" width="18%">Skenario</th><th bgcolor="#122A45" width="18%">Contoh Input (rekaan)</th><th bgcolor="#122A45" width="25%">Hasil Diharapkan</th><th bgcolor="#122A45" width="14%">Hasil Aktual</th><th bgcolor="#122A45" width="15%">Status</th></tr></thead><tbody><tr><td bgcolor="#F2F5F9">TC-01</td><td bgcolor="#F2F5F9">Kolom wajib kosong</td><td bgcolor="#F2F5F9">nilai nama kosong</td><td bgcolor="#F2F5F9">Baris ditolak, pesan jelas</td><td bgcolor="#F2F5F9">Sesuai</td><td bgcolor="#F2F5F9">Lulus</td></tr><tr><td bgcolor="#F2F5F9">TC-02</td><td bgcolor="#F2F5F9">Urutan kolom tertukar</td><td bgcolor="#F2F5F9">header dibalik</td><td bgcolor="#F2F5F9">Impor gagal, petunjuk urutan</td><td bgcolor="#F2F5F9">Sesuai</td><td bgcolor="#F2F5F9">Lulus</td></tr><tr><td bgcolor="#F2F5F9">TC-03</td><td bgcolor="#F2F5F9">Encoding berbeda</td><td bgcolor="#F2F5F9">berkas non-UTF-8</td><td bgcolor="#F2F5F9">Pesan encoding, tak lanjut</td><td bgcolor="#F2F5F9">Kurang jelas</td><td bgcolor="#F2F5F9">Perbaikan</td></tr><tr><td bgcolor="#F2F5F9">TC-04</td><td bgcolor="#F2F5F9">Baris ganda</td><td bgcolor="#F2F5F9">dua id sama</td><td bgcolor="#F2F5F9">Duplikat terdeteksi, dilapor</td><td bgcolor="#F2F5F9">Sesuai</td><td bgcolor="#F2F5F9">Lulus</td></tr><tr><td bgcolor="#F2F5F9">TC-05</td><td bgcolor="#F2F5F9">Koma di dalam teks</td><td bgcolor="#F2F5F9">nilai &quot;Kopi, hitam&quot;</td><td bgcolor="#F2F5F9">Dibaca sebagai satu nilai</td><td bgcolor="#F2F5F9">Terpotong</td><td bgcolor="#F2F5F9">Perbaikan</td></tr></tbody></table></div>
+<p style="page-break-before: always;"></p><div><p class="eyebrow">SAMPLE</p><h2>RINGKASAN</h2><p class="">Lima kasus diuji: tiga lulus, dua perlu tindak lanjut. Fokus perbaikan ada pada kejelasan pesan encoding dan penanganan koma di dalam nilai teks. Seluruh kasus merupakan contoh rekaan untuk keperluan ilustrasi.</p><h2>CHANGE LOG</h2><table cellspacing="0" cellpadding="9"><thead><tr><th bgcolor="#122A45" width="6%">No</th><th bgcolor="#122A45" width="34%">Temuan</th><th bgcolor="#122A45" width="41%">Tindakan</th><th bgcolor="#122A45" width="19%">Status</th></tr></thead><tbody><tr><td bgcolor="#F2F5F9">1</td><td bgcolor="#F2F5F9">TC-03: pesan encoding sulit dipahami</td><td bgcolor="#F2F5F9">Menambahkan contoh perbaikan ke dalam teks pesan</td><td bgcolor="#F2F5F9">Terjadwal</td></tr><tr><td bgcolor="#F2F5F9">2</td><td bgcolor="#F2F5F9">TC-05: nilai berkoma terpotong saat diimpor</td><td bgcolor="#F2F5F9">Mengusulkan penanganan tanda kutip pada parser</td><td bgcolor="#F2F5F9">Terjadwal</td></tr></tbody></table><p class="">Catatan proses: daftar kasus rekaan ini disusun dengan bantuan alat (AI-assisted), lalu setiap kasus ditelaah ulang secara manual (human-reviewed) agar logika dan bahasanya tetap jelas.</p><p class="notice">Ulangi penegasan: ini contoh rekaan, bukan testimoni, bukan data klien, dan bukan klaim profit.</p></div>
+</body></html>

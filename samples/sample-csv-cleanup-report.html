@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><title>LAPORAN PEMBERSIHAN DATA CSV</title><style>
+@page { size: A4; margin: 18mm 17mm; }
+body { font-family: "DejaVu Sans", sans-serif; font-size: 10pt; color: #122A45; line-height: 1.45; }
+h1, h2, h3, p, td, th { font-family: "DejaVu Sans", sans-serif; }
+h1 { font-size: 31pt; line-height: 1.15; margin-top: 18mm; margin-bottom: 6mm; }
+h2 { font-size: 17pt; margin-top: 8mm; margin-bottom: 5mm; }
+h3 { font-size: 11pt; color: #122A45; margin-top: 7mm; }
+p { margin-top: 3mm; margin-bottom: 4mm; }
+.eyebrow { font-size: 9pt; letter-spacing: 2pt; color: #167760; font-weight: bold; border-top: 5pt solid #37C9A3; padding-top: 5mm; }
+.subtitle { font-size: 17pt; color: #526579; margin-bottom: 14mm; }
+.notice { background: #F2F5F9; border-left: 4pt solid #E8734A; padding: 5mm; font-size: 9pt; }
+.notice-title { font-size: 10pt; font-weight: bold; }
+.meta { font-size: 9pt; margin-top: 10mm; }
+.footer { font-size: 8pt; color: #526579; border-top: 1pt solid #dbe2ea; margin-top: 8mm; padding-top: 3mm; }
+.page { page-break-before: always; }
+pre { background: #F2F5F9; padding: 5mm; font-family: "DejaVu Sans", monospace; font-size: 10pt; line-height: 1.5; border-left: 3pt solid #37C9A3; }
+table { border-collapse: collapse; width: 100%; font-size: 8pt; margin-top: 4mm; }
+th { background: #122A45; color: #ffffff; text-align: left; font-size: 8pt; }
+td { vertical-align: top; border-bottom: 1pt solid #dbe2ea; background: #F2F5F9; }
+tr { page-break-inside: avoid; }
+.qa table { font-size: 7.5pt; }
+.qa th { font-size: 7.5pt; }
+li { margin-bottom: 3mm; }
+</style></head><body>
+<p class="eyebrow">DOKUMEN CONTOH REKAAN</p><h1>LAPORAN PEMBERSIHAN DATA CSV</h1><p class="subtitle">Sebelum dan Sesudah</p><div class="notice"><p class="notice-title">---------- DOKUMEN CONTOH REKAAN ----------</p><p class="">Dibuat untuk ilustrasi saja. Bukan proyek klien nyata, bukan testimoni, dan bukan klaim hasil profit. Seluruh nilai, baris, dan nama kolom di dalam dokumen ini bersifat rekaan serta tidak merujuk pada pihak mana pun.</p></div><div class="meta"><p class="">Layanan terkait : Proofreading Bahasa Indonesia dan English sederhana, dengan change log dan proses AI-assisted, human-reviewed.</p><p class="">Jenis berkas    : Contoh laporan (PDF)</p><p class="">Cakupan         : 3 halaman — Sampul / Sebelum-Sesudah / Ringkasan &amp; Change Log</p></div><p class="footer">SAMPLE</p>
+<p style="page-break-before: always;"></p><div><p class="eyebrow">SAMPLE</p><h2>SEBELUM — potongan CSV mentah (rekaan)</h2><pre>id,nama,tanggal,jumlah
+1,Roti ,5/1/2024,12
+2, Teh,2024-1-7,8
+2, Teh,2024-1-7,8
+3,Kopi,07/02/2024,3.5</pre><h2>SESUDAH — hasil pembersihan (rekaan)</h2><pre>id,nama,tanggal,jumlah
+1,Roti,2024-01-05,12
+2,Teh,2024-01-07,8
+3,Kopi,2024-02-07,3.5</pre><h3>Penjelasan singkat:</h3><ul><li>Spasi di awal/akhir nilai teks dibuang agar seragam.</li><li>Semua tanggal diseragamkan ke pola YYYY-MM-DD.</li><li>Baris dengan id ganda (id 2) dihapus salah satu salinannya.</li><li>Angka desimal tetap dipertahankan, hanya kerapian format yang dirapikan.</li></ul></div>
+<p style="page-break-before: always;"></p><div><p class="eyebrow">SAMPLE</p><h2>RINGKASAN</h2><p class="">Empat baris data mentah menjadi tiga baris data bersih. Empat jenis perbaikan dicatat: spasi, format tanggal, duplikasi, dan kerapian angka desimal. Tidak ada perubahan pada makna atau nilai asli data.</p><h2>CHANGE LOG</h2><table cellspacing="0" cellpadding="9"><thead><tr><th bgcolor="#122A45" width="6%">No</th><th bgcolor="#122A45" width="35%">Masalah pada data</th><th bgcolor="#122A45" width="30%">Penyesuaian</th><th bgcolor="#122A45" width="29%">Dampak</th></tr></thead><tbody><tr><td bgcolor="#F2F5F9">1</td><td bgcolor="#F2F5F9">Spasi awal/akhir pada &quot;Roti &quot; dan &quot; Teh&quot;</td><td bgcolor="#F2F5F9">Spasi dibuang</td><td bgcolor="#F2F5F9">Nilai teks menjadi rapi</td></tr><tr><td bgcolor="#F2F5F9">2</td><td bgcolor="#F2F5F9">Tanggal campuran (5/1/2024, 2024-1-7, 07/02/2024)</td><td bgcolor="#F2F5F9">Diseragamkan ke YYYY-MM-DD</td><td bgcolor="#F2F5F9">Urutan tanggal terbaca</td></tr><tr><td bgcolor="#F2F5F9">3</td><td bgcolor="#F2F5F9">Baris duplikat dengan id 2</td><td bgcolor="#F2F5F9">Salinan duplikat dihapus</td><td bgcolor="#F2F5F9">Jumlah data berkurang satu</td></tr><tr><td bgcolor="#F2F5F9">4</td><td bgcolor="#F2F5F9">Desimal &quot;3.5&quot; tidak seragam</td><td bgcolor="#F2F5F9">Format desimal ditetapkan</td><td bgcolor="#F2F5F9">Konsisten saat diimpor</td></tr></tbody></table><p class="">Catatan proses: dokumen rekaan ini disusun dengan bantuan alat (AI-assisted), lalu setiap perubahan diperiksa ulang secara manual (human-reviewed) untuk memastikan makna tidak berubah.</p><p class="notice">Ulangi penegasan: ini contoh rekaan, bukan testimoni, bukan data klien, dan bukan klaim profit.</p></div>
+</body></html>
