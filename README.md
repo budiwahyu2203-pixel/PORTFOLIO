@@ -8,12 +8,13 @@ Static corporate portfolio for Wahyu Budiyono. Bilingual English and Indonesian.
 - `styles.css` - corporate layout and responsive styles
 - `script.js` - language toggle
 - `.nojekyll` - disables Jekyll processing on GitHub Pages
+- `assets/CV-Wahyu-Budiyono-2026.pdf` - downloadable CV
 
 ## Privacy
 
-Published contact email: `budiwahyu2203@gmail.com`.
+Published contact details: `Wahyubudi38588@gmail.com`, phone `0882005470145`, LinkedIn profile, location, and the five reference contacts with their phone numbers.
 
-Not published: old email, phone numbers, full address, reference contacts, raw CV PDF, client data, trading methods, performance claims, and investment advice.
+The downloadable CV PDF contains the same details. Not published: client data, trading methods, performance claims, and investment advice.
 
 ## Local preview
 

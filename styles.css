@@ -414,8 +414,27 @@ pre {
   text-align: center;
 }
 
-.contact-card .btn {
+.contact-card .hero-actions {
+  justify-content: center;
   margin: 10px 0 14px;
+}
+
+.contact-card .btn {
+  margin: 0;
+}
+
+.contact .btn.secondary {
+  border-color: #c4d4e5;
+  color: var(--navy);
+}
+
+.contact-line {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.references {
+  margin-top: 20px;
 }
 
 .muted {
